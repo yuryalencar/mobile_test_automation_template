@@ -52,14 +52,22 @@ This is a template for make mobile tests using Robot Framework creating tests su
     ```
     pip3 install robotframework
     ```
+5. [Appium Library For Robot](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+    ```
+    pip3 install --upgrade robotframework-appiumlibrary
+    ```
 
 ### Installation
 
-1. To install this project you can clone it and go to step 2. Or use the commands below:
+1. Go to config folder and run:
+  ```
+  cp env.example.robot env.robot
+  ```
+2. Configure Enviroments Variables
+  * To Get UDID in MacOS
     ```
-    npm install rest_api_test_automation_template
+    instruments -s
     ```
-    1.1 Extract the test project from the node_modules folder and save it in your preferred location.
 
 ### Languages used
 
@@ -89,9 +97,9 @@ Below is a list of the files by directory.
 
 |               Directory | Files in folder                                                               |
 | ----------------------: | ----------------------------------------------------------------------------- |
-|                `config` | **config_name.robot** All files used to configure your Robot tests, such as tokens and more.  |
-|                  `libs` | **lib_name.py** all Python files used to provide support in tests.                            |
-|                `common` | **common_filename.robot** All common codes used to make requests.   |
+|                `config` | **env.robot** All files used to configure your Robot tests such as desired capabilities.  |
+|                  `libs` | **lib_name.py** All Python files used to provide support in tests.  |
+|                   `app` | **ios or android** File to run your tests (apk, ipa or app).   |
 |                 `tests` | **feature/suite_tests_name.robot** All tests files.   |
 
 ## Contributing
