@@ -131,3 +131,4 @@ dmypy.json
 # Mobile Template
 logs
 config/env.robot
+.DS_STORE
