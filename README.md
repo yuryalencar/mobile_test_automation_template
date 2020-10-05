@@ -50,9 +50,17 @@ This is a template for make mobile tests using Robot Framework creating tests su
 3. [Appium Desktop](https://github.com/appium/appium-desktop)
 4. [Robot Framework](https://robotframework.org/)
     ```
+    pip install robotframework
+    ```
+    or
+    ```
     pip3 install robotframework
     ```
 5. [Appium Library For Robot](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+    ```
+    pip install --upgrade robotframework-appiumlibrary
+    ```
+    or
     ```
     pip3 install --upgrade robotframework-appiumlibrary
     ```
@@ -80,16 +88,21 @@ This is a template for make mobile tests using Robot Framework creating tests su
 robot -d ./logs tests
 ```
 
-2. Run your test by test suite
+2. Run your test by feature test suite
 ```
 robot -d ./logs tests/feature_name
+```
+
+3. Run your test by specific feature test suite
+```
+robot -d ./logs tests/feature_name/suite.robot
 ```
 
 ### Best Pratices
 
 1. Run yours tests using `-d ./logs` for organize log files.
-2. Not remove Config example files.
-3. create your Commons file according to your need.
+2. Not remove env.example file.
+3. Update your Commons file according to your need.
 
 ### Files by directories
 
@@ -97,10 +110,14 @@ Below is a list of the files by directory.
 
 |               Directory | Files in folder                                                               |
 | ----------------------: | ----------------------------------------------------------------------------- |
-|                `config` | **env.robot** All files used to configure your Robot tests such as desired capabilities.  |
-|                  `libs` | **lib_name.py** All Python files used to provide support in tests.  |
 |                   `app` | **ios or android** File to run your tests (apk, ipa or app).   |
-|                 `tests` | **feature/suite_tests_name.robot** All tests files.   |
+|                `config` | **env.robot** All files used to configure your Robot tests such as desired capabilities.  |
+|                  `logs` | **log.html** Test reports in html, and screenshots.  |
+|        `src/components` | **components.robot** All components of the application used in tests.  |
+|              `src/libs` | **lib_name.py** All Python files used to provide support in tests.  |
+|             `src/pages` | **page_name.robot** All pages of the application using Page Object Pattern.  |
+|             `src/tests` | **base.robot** Import of the files used in tests and base of the execution test cases.   |
+| `src/tests/<feature-name>` | **suite_tests_name.robot** Execution test cases.   |
 
 ## Contributing
 
