@@ -7,3 +7,4 @@ ${UDID}                 # Emulator id
 ${AUTOMATION_NAME}      # XCUITest(iOS) / UIAutomator2
 ${PLATFORM_NAME}        # iOS / android
 ${PLATFORM_VERSION}     # OS Version
+${APPIUM_SERVER}        # http://localhost:4723/wd/hub (IS DEFAULT APPIUM SERVER)
