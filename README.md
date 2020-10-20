@@ -14,6 +14,9 @@
   - [Installation](#installation)
   - [Languages used](#languages-used)
   - [How To Use](#how-to-use)
+    - [Preconditions (React Native)](#preconditions-react-native)
+    - [Preconditions (Flutter)](#preconditions-flutter)
+    - [Run Tests](#run-tests)
   - [Best Pratices](#best-pratices)
   - [Files by directories](#files-by-directories)
 - [Contributing](#contributing)
@@ -82,6 +85,22 @@ This is a template for make mobile tests using Robot Framework creating tests su
 - [Robot Framework (Python Version)](https://robotframework.org/)
 
 ### How To Use
+
+_Ps.: The build to run tests in iPhone Emulator is different from the used in the device._
+
+#### Preconditions (React Native)
+1. Configure env file
+2. Insert .app/.ipa (iOS) or .apk (Android) in app directory
+3. Open original App project and Run Metro Bundler
+```
+yarn start
+```
+
+#### Preconditions (Flutter)
+1. Configure env file
+2. Insert .app/.ipa (iOS) or .apk (Android) in app directory
+
+#### Run Tests
 
 1. Run your all tests
 ```
