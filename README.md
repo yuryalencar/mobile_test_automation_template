@@ -19,6 +19,7 @@
     - [Run Tests](#run-tests)
   - [Best Pratices](#best-pratices)
   - [Files by directories](#files-by-directories)
+- [How mobile tests work?](#how-mobile-tests-work)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -137,6 +138,10 @@ Below is a list of the files by directory.
 |             `src/pages` | **page_name.robot** All pages of the application using Page Object Pattern.  |
 |             `src/tests` | **base.robot** Import of the files used in tests and base of the execution test cases.   |
 | `src/tests/<feature-name>` | **suite_tests_name.robot** Execution test cases.   |
+
+## How mobile tests work?
+
+
 
 ## Contributing
 
