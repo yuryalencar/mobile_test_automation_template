@@ -141,7 +141,7 @@ Below is a list of the files by directory.
 
 ## How mobile tests work?
 
-
+![How work](https://github.com/yuryalencar/mobile_test_automation_template/blob/master/img-readme/mobiletemplate.png)
 
 ## Contributing
 
